@@ -23,6 +23,7 @@ export default function Modal() {
                 id="dialog1_close"
               />
             </div>
+            <h1>Modal</h1>
           </div>
         </div> : null
       }
