@@ -4,7 +4,7 @@ Lists characters from the Breaking Bad series consuming the api, opens modal dis
 
 - React, React hooks, Context api, Sass, Jest, Interface responsiva
 
-Acesse: https://rafabortone.github.io/trails/ 
+Acesse: https://rafabortone.github.io/hotsite-breaking-bad/ 
 
 
 ## Quick Start
