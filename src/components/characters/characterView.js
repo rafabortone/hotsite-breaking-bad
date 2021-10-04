@@ -26,7 +26,8 @@ export default function CharacterView() {
               <p>{'Portrayed: ' + character.portrayed}</p>
               <p>{'Status: ' + character.status}</p>
             </div>
-            <div className="character-view__quotes">
+            <h3>Quotes:</h3>
+            <div className="character-view__quotes"> 
               <ul>
                 {quotes.map(({ quote, quote_id }) => {
                   return (

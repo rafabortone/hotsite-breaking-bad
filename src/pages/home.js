@@ -10,11 +10,13 @@ export default function Home() {
     <main className="main-home">
       <section className="main-home__banner">
         <img src={Banner} />
-        <h1>Home</h1>
       </section>
-      <section>
+      <section >
         <div className="container">
-          <Characters/>
+          <h1 className="main-home__title">List of characters</h1>
+          <Characters
+            limit="12"
+          />
         </div>
       </section>
       <Modal/>

@@ -16,7 +16,7 @@ export default function CharactersList() {
 
   useEffect(() => {
     async function getCharacters() {
-      const request = await fetch(url + 'characters?limit=12');
+      const request = await fetch(url + 'characters' );
       const response = await request.json();
 
       if (request.status === 200) {

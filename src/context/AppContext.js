@@ -9,7 +9,6 @@ const AppContextProvider = ({children}) => {
   const [quotes, setQuotes] = useState([]);
 
 
-
   return (
     <AppContext.Provider 
       value={{
