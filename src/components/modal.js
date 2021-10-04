@@ -14,7 +14,7 @@ export default function Modal() {
   return (
     <>
       {modalVisible ?
-        <div className="modal" data-testeid="modal" tabIndex="-1">
+        <div className="modal" data-testeid="modal">
           <div className="modal__content" >
             <div className="modal__close">
               <img 
