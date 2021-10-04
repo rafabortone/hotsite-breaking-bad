@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 import App from './App';
-import TrailsListProvider from './context/TrailsList'
+import AppContextProvider from './context/AppContext'
 
 test('Modal deve iniciar fechada', () => {
   const {container, getByTestId}= render(
