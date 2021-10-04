@@ -1,5 +1,5 @@
 .modal {
-  background-color: rgba($c-black, $alpha: 0.55);
+  background-color: rgba($c-black, $alpha: 0.7);
   position: fixed;
   left: 0;
   top: 0;
@@ -9,17 +9,20 @@
   align-items: center;
   justify-content: center;
   padding: 0 16px;
-
+  z-index: 3;
+  
   &__close {
+    position: absolute;
+    right: 0;
+    top: 0;
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    padding: 0px;
+    padding: 10px;
     img  {
       width: 15px;
       height: 15px;
       cursor: pointer;
-
       @media (min-width: 1024px) {
         width: 30px;
         height: 30px;
@@ -28,104 +31,15 @@
   }
 
   &__content {
-    display: flex;
-    flex-direction: column;
+    position: relative;
     width: 100%;
     max-width: 1240px;
     background-color: $c-white;
-    padding: 16px 30px;
-    height: 100%;
-    @media (min-width:1024px) {
-      padding: 28px 60px;
+    overflow: auto;
+    max-height: 500px;
+    @media (min-width:968px) {
       height: auto;
       max-height: 100%;
     }
-   
-    article {
-      width: 100%;
-      margin-bottom: 19px;
-      
-    }
   }
-
-  &__title {
-    color: $c-black;
-    font: {
-      size: 40px;
-      weight: 600;
-    };
-    line-height: 50px;
-    margin-bottom: 8px;
-    @media (min-width:1024px) {
-      font-size: 118px;
-      line-height: 125px;
-      margin-bottom: 8px;
-    }
-  }
-
-  &__description {
-    color: $c-black;
-    font: {
-      size: 14px;
-      weight: normal;
-    };
-    line-height: 20px;
-    margin-bottom: 18px;
-    @media (min-width:1024px) {
-      font-size: 22px;
-      line-height: 32px;
-    }
-  }
-
-  &__button {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-
-    h3 {
-      color: $c-font-blue;
-      font: {
-        size: 22px;
-        weight: 700;
-      };
-      margin: 0;
-      @media (min-width: 1024px) {
-        font-size: 28px;
-      }
-    }
-  }
-
-  &__grade {
-    width: 100%;
-    overflow: auto;
-
-    &--list {
-      display: flex;
-      flex-direction: column;
-    }
-
-    &--item{
-      color: $c-font-blue;
-      background: rgba(26, 72, 110, 0.13);
-      border-radius: 5px;
-      display: flex;
-      justify-content: space-between;
-      padding: 8px 12px;
-      margin-bottom: 14px;
-      h3,p {
-        font: {
-          size: 12px;
-          weight: normal;
-        };
-      }
-      @media (min-width:1024px) {
-        padding: 22px 32px;
-        h3, p {
-          font-size: 16px;
-        }
-      }
-    }
-  }
-
-
 }

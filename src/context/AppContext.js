@@ -3,26 +3,24 @@ import React, { createContext, useState } from "react";
 export const AppContext = createContext();
 
 const AppContextProvider = ({children}) => {
-  const[trailsList, setTrailsList] = useState([]);
-  const [modalVisible, setModalVisible] = useState(false);
-  const [trail, setTrail] = useState([]);
-  const [grade, setGrade] = useState([]);
-  const [subscription, setSubscription] = useState([]);
+  const[charactersList, setCharactersList] = useState([]);
+  const [modalVisible, toggleModal] = useState(false);
+  const [character, setCharacter] = useState([]);
+  const [quotes, setQuotes] = useState([]);
+
 
 
   return (
     <AppContext.Provider 
       value={{
-        trailsList,
-        setTrailsList,
+        charactersList,
+        setCharactersList,
         modalVisible,
-        setModalVisible,
-        trail,
-        setTrail,
-        grade,
-        setGrade,
-        subscription,
-        setSubscription
+        toggleModal,
+        character,
+        setCharacter,
+        quotes,
+        setQuotes
       }}
     >
       {children}

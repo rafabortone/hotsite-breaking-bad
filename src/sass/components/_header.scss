@@ -1,8 +1,9 @@
 header{
+  position: fixed;
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   padding: 24px;
-  background-color: $c-bg-blue;
-  margin-bottom: 61px;
+  background-image: linear-gradient(to bottom, rgba(247, 190, 25, 1), rgba(165, 117, 35, 1));
+  z-index: 2;
 }
