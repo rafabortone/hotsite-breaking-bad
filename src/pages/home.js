@@ -11,9 +11,7 @@ export default function Home() {
       <section >
         <div className="container">
           <h1 className="main-home__title">List of characters</h1>
-          <Characters
-            limit="12"
-          />
+          <Characters/>
         </div>
       </section>
       <Modal/>
